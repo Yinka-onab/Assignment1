@@ -1,0 +1,135 @@
+/* styles.css - base shared styles */
+
+:root{
+  --primary:#2b6cb0;   /* blue */
+  --accent:#f6ad55;    /* orange */
+  --bg:#f7fafc;
+  --text:#2d3748;
+  --muted:#718096;
+}
+
+header {
+  background: linear-gradient(135deg, var(--primary), var(--accent));
+  color: white;
+  padding: 1rem 0;
+}
+
+body{
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+  margin:0;
+  color:var(--text);
+  background:var(--bg);
+  line-height:1.5;
+}
+
+/* Navigation */
+.main-nav{
+  list-style:none;
+  margin:0;
+  padding:0;
+  text-align:center;
+}
+.main-nav li{
+  display:inline-block;
+  margin:0 0.5rem;
+}
+.main-nav a{
+  color:white;
+  text-decoration:none;
+  font-weight:600;
+  padding:0.25rem 0.5rem;
+}
+
+/* Basic layout */
+main{
+  padding:1rem;
+  max-width:1000px;
+  margin:0 auto;
+}
+
+/* Profile and hero */
+.profile img{
+  max-width:200px;
+  height:auto;
+  border-radius:6px;
+  display:block;
+}
+.profile{
+  float:left;
+  margin-right:1rem;
+  width:40%;
+}
+
+/* Clear floats where needed */
+.about-intro::after, .highlights::after, .projects::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Projects */
+.project{
+  margin-bottom:1.25rem;
+  padding:0.75rem;
+  background:white;
+  border-radius:8px;
+  box-shadow: 0 1px 2px rgba(0,0,0,0.05);
+}
+
+/* Form */
+.contact-form form{
+  background:white;
+  padding:1rem;
+  border-radius:6px;
+  box-shadow: 0 1px 2px rgba(0,0,0,0.05);
+}
+label{display:block;margin-top:0.75rem;}
+input, textarea{
+  width:100%;
+  padding:0.5rem;
+  box-sizing:border-box;
+  border:1px solid #e2e8f0;
+  border-radius:4px;
+}
+
+/* Button */
+button{
+  margin-top:0.75rem;
+  padding:0.6rem 1rem;
+  border:none;
+  border-radius:6px;
+  cursor:pointer;
+  background:var(--primary);
+  color:white;
+  font-weight:600;
+}
+
+/* Footer */
+footer{
+  text-align:center;
+  padding:1rem 0;
+  margin-top:2rem;
+  background: linear-gradient(180deg, rgba(0,0,0,0.03), transparent);
+  font-size:0.9rem;
+}
+
+.form-row {
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.form-row label,
+.form-row input {
+  display: inline-block;
+  margin: 5px 10px;
+  vertical-align: middle;
+}
+
+img {
+  width: 250px;
+  height: auto; 
+  border-radius: 10px; 
+  display: block;
+  margin: 20px auto; 
+}
+

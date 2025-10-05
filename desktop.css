@@ -1,0 +1,5 @@
+/* desktop.css */
+body { font-size:17px; }
+.profile{ float:left; width:30%; }
+.main-nav li { margin:0 1rem; }
+main{ padding:2rem; }
